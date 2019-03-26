@@ -1,6 +1,6 @@
 package com.pirate.form.basketball.service.impl;
 
-import com.pirate.form.basketball.dao.UserDao;
+import com.pirate.form.basketball.dao.userDb.UserDao;
 import com.pirate.form.basketball.entity.UserPO;
 import com.pirate.form.basketball.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;

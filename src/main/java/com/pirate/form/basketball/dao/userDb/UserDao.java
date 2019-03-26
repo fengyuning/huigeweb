@@ -1,4 +1,4 @@
-package com.pirate.form.basketball.dao;
+package com.pirate.form.basketball.dao.userDb;
 
 import com.pirate.form.basketball.entity.UserPO;
 import org.apache.ibatis.annotations.Mapper;

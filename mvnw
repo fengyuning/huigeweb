@@ -80,7 +80,7 @@ if [ -z "$M2_HOME" ] ; then
   while [ -h "$PRG" ] ; do
     ls=`ls -ld "$PRG"`
     link=`expr "$ls" : '.*-> \(.*\)$'`
-    if expr "$link" : '/.*' > /dev/null; then
+    if expr "$link" : '/.*' > /config.dev/null; then
       PRG="$link"
     else
       PRG="`dirname "$PRG"`/$link"
@@ -222,12 +222,12 @@ else
     fi
     wrapperJarPath="$BASE_DIR/.mvn/wrapper/maven-wrapper.jar"
 
-    if command -v wget > /dev/null; then
+    if command -v wget > /config.dev/null; then
         if [ "$MVNW_VERBOSE" = true ]; then
           echo "Found wget ... using wget"
         fi
         wget "$jarUrl" -O "$wrapperJarPath"
-    elif command -v curl > /dev/null; then
+    elif command -v curl > /config.dev/null; then
         if [ "$MVNW_VERBOSE" = true ]; then
           echo "Found curl ... using curl"
         fi
