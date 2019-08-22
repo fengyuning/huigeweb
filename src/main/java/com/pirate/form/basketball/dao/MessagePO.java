@@ -1,5 +1,8 @@
 package com.pirate.form.basketball.dao;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonInclude;
+
 import java.io.Serializable;
 
 /**
@@ -11,8 +14,10 @@ public class MessagePO implements Serializable {
 
     private int id;
 
+    @JsonIgnore
     private String name;
 
+    @JsonInclude(JsonInclude.Include.NON_NULL)
     private String messageId;
 
     public MessagePO(int id, String name, String messageId) {

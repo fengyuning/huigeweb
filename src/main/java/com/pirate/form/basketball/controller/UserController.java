@@ -24,4 +24,12 @@ public class UserController {
         return ResultVO.success(userService.getUserById(id));
     }
 
+
+    @GetMapping("test/user")
+    public ResultVO<UserPO> getUserById() {
+        UserPO user = new UserPO();
+        user.setId(222);
+        user.setName("无敌海贼222");
+        return ResultVO.success(user);
+    }
 }

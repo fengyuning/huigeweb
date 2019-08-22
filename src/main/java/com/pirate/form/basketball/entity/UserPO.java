@@ -1,11 +1,16 @@
 package com.pirate.form.basketball.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonInclude;
+
 /**
  * @author fengyn
  * @version 2019/01/26
  */
 public class UserPO {
     private Integer id;
+
+    @JsonInclude(JsonInclude.Include.NON_NULL)
     private String name;
 
     public Integer getId() {
